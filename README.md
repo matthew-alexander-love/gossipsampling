@@ -4,8 +4,6 @@ A Gossip Peer Sampling Service (GPSS) creates a dynamic, random, self-healing ov
 
 Check out a walk through and tutorial [here](https://bytesandbrains.ai/gossip-peer-sampling-service/)
 
-Check out the source code at the [Gossip Sampling Repository]("https://github.com/matthew-alexander-love/gossip")
-
 ## Features
 
 - General-Purpose Library: Build on a flexible GPSS implementation inspired by Epidemic-style Dissemination in Large-Scale Systems.
@@ -15,20 +13,12 @@ Check out the source code at the [Gossip Sampling Repository]("https://github.co
 - Multiple Peer Selection Subscription that are independent from one another.
 - Open Source: This project is licensed under the terms of the GPLv3 license. Contributions are welcome to improve functionality or add new features. Check out the Future Features section to see how you could help.
 
-#### Future Features:
-This project is proudly open source and will remain so, as I believe in the power of collaboration and accessibility for all.
-
-That said, I see potential to grow this project further. With sufficient support, such as funding or contributions more advanced features could be developed. Said features include but are not limited to:
+#### Future Ideas
 - Connection Security (mTLS)
-- Fully Monitored and Configurable Bootstrap Servers
-- Dashboards with Network and device statistics
-- Greatly Enhanced Simulation Capability:
-    - Both in reflecting real networking conditions and in resource efficiency.
-- Dedicated support for proffesional assistance, training, entry server hosting, and/or custom solutions.
-- Remote Peer Sampling such that many nodes could use a single Gossip Peer Sampling Service Instance over the network
-
-
-If you have a big idea email me at gossipsampling@gmail.com for some conversation before submitting a PR, otherwise just submit a PR on github!
+- Monitored and configurable bootstrap servers
+- Dashboards with network statistics
+- Enhanced simulation capability
+- Remote Peer Sampling mode
 
 ## Getting Started:
 
@@ -45,11 +35,8 @@ If you have a big idea email me at gossipsampling@gmail.com for some conversatio
 
 
 #### Building for Python
-- For Ubuntu you can use a remote installation:
-    - pip install gossipsampling
-- For ALL others you will need to build locally: 
-    - pip install pybind11 setuptools
-    - pip install .
+- pip install pybind11 setuptools
+- pip install .
 
 ## Examples
 
@@ -106,7 +93,7 @@ Once the project has been built, there are examples for both Python and C++ loca
     ```bash
     # IPv6
     cd example
-    python gossip_client_example.py [::]:60000 [::]:500000
+    python gossip_client_example.py [::]:60000 [::]:50000
     ```
 
 ### Emulating a Network over LAN

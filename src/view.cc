@@ -353,6 +353,7 @@ void URView::remove_random(int num_remove) {
         std::uniform_int_distribution<> distr(0, _view.size() - 1);
         int rand = distr(_eng);
         removed.push_back(_view[rand]->address());
+        _node_lut.erase(_view[rand]->address());
         _view.erase(_view.begin() + rand);
     }
 
